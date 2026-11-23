@@ -1,0 +1,7 @@
+# STAGING ONLY: hide from Google until launch. Delete these two lines at launch.
+/*
+  X-Robots-Tag: noindex, nofollow
+
+# The edit screen should never be in Google
+/admin/*
+  X-Robots-Tag: noindex, nofollow

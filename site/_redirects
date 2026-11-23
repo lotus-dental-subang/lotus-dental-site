@@ -1,0 +1,16 @@
+# Old website addresses -> new pages (Cloudflare Pages)
+/blog-postings  /blog/  301
+/blog-postings/  /blog/  301
+/subang-jaya-dentist/  /  301
+/doctor-profile/  /#team  301
+/invisalign-subang-jaya/  /invisalign-malaysia/  301
+/scaling-2/  /#offer  301
+/kids-dental-workshop/  /#family  301
+/services/  /#treatments  301
+/form/  /#visit  301
+/type-of-dental-emergencies/  /blog/  301
+/5-reasons-to-take-good-care-of-your-teeth/  /blog/  301
+/shop/  /  301
+/product/*  /  301
+/featured_item/*  /  301
+/faq/*  /#faq  301
