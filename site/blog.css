@@ -1,0 +1,70 @@
+/* Shared style for the Lotus Dental blog pages (same look as the home page) */
+:root{--lime:#B0E018;--pink:#F8A0B8;--navy:#080850;--ink:#0d0d3d;--ink-soft:#5c5c78;--hair:#e8e6ef;--blush:#fff3f6;--spring:cubic-bezier(.34,1.56,.64,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{color:var(--ink);font:400 17px/1.75 Montserrat,system-ui,sans-serif;overflow-x:hidden;
+  background:radial-gradient(60% 40% at 12% 0%,rgba(176,224,24,.12),transparent 70%),radial-gradient(50% 40% at 92% 6%,rgba(248,160,184,.18),transparent 70%),#fff}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--navy)}
+.pill{position:fixed;z-index:50;top:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:18px;padding:6px 6px 6px 14px;border-radius:999px;
+  background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--hair);box-shadow:0 8px 30px rgba(8,8,80,.06);font-size:13px;white-space:nowrap;max-width:calc(100vw - 24px)}
+.pill .brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;color:var(--navy)}
+.pill .brand img{width:26px;height:26px;border-radius:7px}
+.pill nav{display:flex;gap:16px;padding-left:16px;border-left:1px solid var(--hair)}
+.pill nav a{text-decoration:none;font-weight:600;color:var(--ink-soft)}
+.pill nav a:hover{color:var(--navy)}
+.btn-wa{display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 8px 0 24px;border-radius:999px;background:var(--lime);color:var(--navy);
+  font:800 13px/1 Montserrat,sans-serif;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;white-space:nowrap;box-shadow:0 10px 30px rgba(176,224,24,.4);transition:transform .5s var(--spring)}
+.btn-wa:hover{transform:translateY(-2px) scale(1.02)}
+.btn-wa i{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
+.btn-wa i svg{width:18px;height:18px;color:var(--navy)}
+.btn-wa.sm{height:42px;font-size:12px;padding:0 6px 0 18px;gap:10px}.btn-wa.sm i{width:30px;height:30px}
+.btn-wa.navy{background:var(--navy);color:#fff;box-shadow:0 10px 30px rgba(8,8,80,.25)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--navy)}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(176,224,24,.2)}
+.serif,h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;letter-spacing:-.02em;color:var(--navy)}
+/* article */
+.post{max-width:780px;margin:0 auto;padding:130px 22px 40px}
+.crumbs{font-size:13px;color:var(--ink-soft);margin-bottom:22px}.crumbs a{color:var(--ink-soft)}
+.post h1{font-size:clamp(36px,5vw,58px);line-height:1.06;margin:16px 0 14px}
+.meta{font-size:14px;color:var(--ink-soft);margin-bottom:28px}
+.hero-img{border-radius:28px;overflow:hidden;margin-bottom:34px;box-shadow:0 20px 60px rgba(8,8,80,.1)}
+.hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.note{border:2px dashed #e7c2cf;background:var(--blush);border-radius:18px;padding:14px 18px;font-size:14px;color:#6b3a54;margin-bottom:30px}
+.body h2{font-size:clamp(26px,3vw,34px);line-height:1.15;margin:42px 0 14px}
+.body h3{font-size:clamp(21px,2.3vw,25px);margin:30px 0 10px}
+.body h4{font-family:Montserrat,sans-serif;font-size:17px;font-weight:700;margin:24px 0 8px;color:var(--navy)}
+.body{overflow-wrap:anywhere}
+.body p{margin:0 0 16px;color:#33334f}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33334f}
+.body li{margin-bottom:6px}
+.body figure{margin:26px 0}.body figure img{border-radius:20px;width:100%}
+.body a{color:var(--navy);font-weight:600;text-decoration-color:var(--pink);text-decoration-thickness:2px;text-underline-offset:3px}
+.cta{margin:50px 0 10px;background:var(--pink);border-radius:28px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cta h2{font-size:clamp(24px,2.6vw,32px);line-height:1.1;margin:0}
+.cta p{color:#4a1d36;margin-top:6px;font-size:15px}
+.related{max-width:1180px;margin:30px auto 0;padding:40px 22px 80px}
+.related h2{font-size:clamp(28px,3.4vw,40px);margin:14px 0 26px}
+/* cards (blog index + related) */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hair);border-radius:26px;overflow:hidden;text-decoration:none;color:inherit;min-width:0;transition:border-color .3s,transform .3s,box-shadow .3s}
+.card:hover{border-color:var(--pink);transform:translateY(-4px);box-shadow:0 20px 50px rgba(8,8,80,.08)}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--blush)}
+.card div{padding:20px 22px 24px}
+.card small{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.card h3{font-size:23px;line-height:1.2;margin:8px 0}
+.card p{font-size:14.5px;color:var(--ink-soft);line-height:1.6}
+.index{max-width:1180px;margin:0 auto;padding:140px 22px 80px}
+.index h1{font-size:clamp(42px,6vw,76px);line-height:1;margin:16px 0 14px}
+.index .lead{color:var(--ink-soft);max-width:560px;margin-bottom:40px}
+footer{border-top:1px solid var(--hair);padding:34px 22px;text-align:center;font-size:13px;color:var(--ink-soft);background:#fff}
+.socials{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:16px}
+.socials a{padding:9px 16px;border:1px solid var(--hair);border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;color:var(--navy)}
+.socials a:hover{border-color:var(--pink)}
+@media (max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .pill{gap:10px;padding:5px 5px 5px 10px}.pill .brand span{display:none}.pill nav{gap:10px;padding-left:10px}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .post{padding-top:100px}.index{padding-top:110px}
+  .cta{padding:24px}.btn-wa{height:46px;font-size:12px}
+}

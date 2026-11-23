@@ -1,0 +1,12 @@
+# Only the website itself goes online (GitHub + Cloudflare).
+# Internal notes, raw photos, references, tests and deploy copies stay on this computer.
+/*
+!/.gitignore
+!/package.json
+!/package-lock.json
+!/site/
+!/content/
+!/scripts/
+!/HOW-TO-EDIT.md
+node_modules/
+.DS_Store

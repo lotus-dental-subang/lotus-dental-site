@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lotus Dental · Edit website</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+<script src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
+<script>
+  // The preview on the right looks like the real article page.
+  CMS.registerPreviewStyle('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;600;700;800&display=swap');
+  CMS.registerPreviewStyle('/guide.css');
+  var GuidePreview = createClass({
+    render: function () {
+      var d = this.props.entry.get('data');
+      var img = d.get('image');
+      var src = img ? this.props.getAsset(img).toString() : '';
+      var topic = d.get('topic') || 'your teeth';
+      return h('main', { className: 'post' },
+        h('div', { className: 'kick' }, h('i', { className: 'pet' }), 'Dental guide'),
+        h('h1', {}, d.get('title') || 'Your title'),
+        h('div', { className: 'meta' }, 'By Lotus Dental Clinic, SS15 Subang Jaya'),
+        src ? h('div', { className: 'hero-img' }, h('img', { src: src })) : null,
+        d.get('note') ? h('p', { className: 'note' }, d.get('note')) : null,
+        h('article', { className: 'body' }, this.props.widgetFor('body')),
+        h('div', { className: 'cta' }, h('div', {},
+          h('h2', {}, 'Questions about ' + topic + '?'),
+          h('p', {}, 'Message us. Our dentists will reply and help you book a visit.')))
+      );
+    }
+  });
+  CMS.registerPreviewTemplate('guides', GuidePreview);
+</script>
+</body>
+</html>

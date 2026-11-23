@@ -1,0 +1,90 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog-postings",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-postings/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/subang-jaya-dentist/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/doctor-profile/",
+      "destination": "/#team",
+      "permanent": true
+    },
+    {
+      "source": "/invisalign-subang-jaya/",
+      "destination": "/invisalign-malaysia/",
+      "permanent": true
+    },
+    {
+      "source": "/scaling-2/",
+      "destination": "/#offer",
+      "permanent": true
+    },
+    {
+      "source": "/kids-dental-workshop/",
+      "destination": "/#family",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/#treatments",
+      "permanent": true
+    },
+    {
+      "source": "/form/",
+      "destination": "/#visit",
+      "permanent": true
+    },
+    {
+      "source": "/type-of-dental-emergencies/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/5-reasons-to-take-good-care-of-your-teeth/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/product/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/featured_item/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/faq/(.*)",
+      "destination": "/#faq",
+      "permanent": true
+    }
+  ]
+}
