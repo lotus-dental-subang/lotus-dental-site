@@ -7,5 +7,5 @@ workers_dev = true
 # Sites allowed to receive the login (comma separated)
 ALLOWED_ORIGINS = "https://lotus-dental-site.pages.dev,https://lotusdentalsubang.com,https://www.lotusdentalsubang.com"
 # Filled in after the GitHub login app is created (this ID is not secret)
-GITHUB_CLIENT_ID = ""
+GITHUB_CLIENT_ID = "Ov23liH2MxNh4D8dHZDc"
 # GITHUB_CLIENT_SECRET is a secret: it is added in the Cloudflare dashboard, never in this file.
