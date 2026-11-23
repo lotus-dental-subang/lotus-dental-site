@@ -1,7 +1,8 @@
 # How to add a dental guide to the Lotus Dental website
 
 ## 1. Open the edit screen
-Go to **lotusdentalsubang.com/admin** and log in.
+Go to **lotusdentalsubang.com/admin** (for now: **lotus-dental-site.pages.dev/admin**) and click **Login with GitHub**.
+The first time, GitHub asks you to approve "Lotus Dental edit screen". Click **Authorize**.
 
 ## 2. Write a new guide
 1. Click **+ Dental guide**.
@@ -20,7 +21,8 @@ Click **Save**. The guide now waits in **Workflow** as a draft.
 Set it to **In review** when it is ready.
 
 ## 4. Approval
-Asyiqin checks it and publishes it. The page goes live in about 2 minutes.
+Asyiqin checks it, sets it to **Ready**, then clicks **Publish → Publish now** and **OK** on "Are you sure?".
+The page goes live in about 1 minute.
 
 ## Please remember
 - Write in your own words. Do not copy text from other websites.
