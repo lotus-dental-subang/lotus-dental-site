@@ -8,6 +8,7 @@
 !/content/
 !/scripts/
 !/auth/
+!/.github/
 !/HOW-TO-EDIT.md
 node_modules/
 .DS_Store
