@@ -1,12 +1,13 @@
 # Lotus Dental: edit screen settings (Decap CMS)
-# The two CHANGE-ME lines are filled in when the site goes online (GitHub repo + login helper).
+# GitHub storage: lotus-dental-subang/lotus-dental-site. Login helper: Cloudflare worker lotus-cms-auth (code in /auth).
 
 backend:
   name: github
   repo: lotus-dental-subang/lotus-dental-site
   branch: main
-  base_url: https://CHANGE-ME.workers.dev
+  base_url: https://lotus-cms-auth.nurulasyiqink.workers.dev
   auth_endpoint: auth
+  auth_scope: public_repo
 
 # Lets us try the edit screen on this computer (npm run cms). Ignored online.
 local_backend: true
@@ -14,8 +15,9 @@ local_backend: true
 # Drafts first: the clinic writes, the article waits for review, then it is published.
 publish_mode: editorial_workflow
 
-site_url: https://lotusdentalsubang.com
-display_url: https://lotusdentalsubang.com
+# Change both to https://lotusdentalsubang.com at launch
+site_url: https://lotus-dental-site.pages.dev
+display_url: https://lotus-dental-site.pages.dev
 logo_url: /img/logo.png
 
 media_folder: site/img/blog
