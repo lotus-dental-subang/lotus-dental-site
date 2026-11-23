@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: CHANGE-ME/lotus-dental-site
+  repo: lotus-dental-subang/lotus-dental-site
   branch: main
   base_url: https://CHANGE-ME.workers.dev
   auth_endpoint: auth
